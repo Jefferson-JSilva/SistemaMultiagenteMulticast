@@ -1,0 +1,15 @@
+Teste LOCAL: JVMs independentes, UMA maquina. Nao comprova distribuicao em tres maquinas.
+Java=25.0.1 OS=Windows 11 interface=ethernet_32773 IPv4=239.0.0.247:5247
+2026-10-19T14:28:36.996284200-03:00 PASS caso-1 | CASO 1 id=8aa3a97a-3b7f-4ba9-99a2-b43bd5a7eca3 estado=F Gc=-1.000 Gct=0.000 muE=0.000 | Risco cardiologico baixo
+2026-10-19T14:28:36.999877600-03:00 PASS caso-2 | CASO 2 id=75c71525-7cc7-43cf-8562-b979ec91b548 estado=V Gc=1.000 Gct=0.000 muE=1.000 | Risco cardiologico elevado
+2026-10-19T14:28:37.002299400-03:00 PASS caso-3 | CASO 3 id=903efc3f-334f-4310-8401-d29ee182f061 estado=NAO_EXTREMO Gc=0.115 Gct=0.279 muE=0.557 | Risco indefinido, tendencia a elevado
+2026-10-19T14:28:37.003797100-03:00 PASS caso-4 | CASO 4 id=660fb04c-08f9-4859-8f11-fe6f7eea4518 estado=T Gc=0.000 Gct=1.000 muE=0.500 | Inconclusivo: evidencias contraditorias, reavaliar o paciente
+2026-10-19T14:28:37.008783700-03:00 PASS caso-5 | CASO 5 id=e1d0daca-3aa0-40cf-b8cd-42cd28fc935b estado=PARACOMPLETO Gc=0.000 Gct=-1.000 muE=0.500 | Inconclusivo: evidencias contraditorias, reavaliar o paciente
+2026-10-19T14:28:37.009781600-03:00 PASS caso-6 | CASO 6 id=8c69bcda-88ad-497f-950f-706945962c20 estado=NAO_EXTREMO Gc=-0.465 Gct=0.106 muE=0.267 | Risco indefinido, tendencia a baixo
+2026-10-19T14:28:40.342940900-03:00 PASS falha-agente | IMC ausente; prazo de 3000 ms; sem consolidacao
+2026-10-19T14:28:41.301411300-03:00 PASS reingresso | IMC reiniciado sem reiniciar os outros agentes
+2026-10-19T14:28:41.929624900-03:00 PASS coordenadores-simultaneos | casos 1 e 2 correlacionados por UUID e destino proprio
+2026-10-19T14:28:43.167712400-03:00 PASS agente-duplicado | segunda resposta TABAGISMO ignorada e registrada
+2026-10-19T14:28:43.789049300-03:00 PASS entrada-invalida | altura zero devolve ERRO do IMC; avaliacao incompleta
+2026-10-19T14:28:45.531465700-03:00 PASS pool-concorrente | duas requisicoes IMC iniciadas antes da primeira resposta com atraso de 600 ms
+2026-10-19T14:28:45.610246500-03:00 PASS encerramento | todos os processos encerrados com sair e registros LEAVE/CLOSE
